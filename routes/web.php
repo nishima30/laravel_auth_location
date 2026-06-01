@@ -3,6 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AuthController;
 
+
+Route::get('/test-text', function () {
+    return 'Laravel is working on Vercel';
+});
+
 Route::get('/', function () {
     return redirect('/login');
 });
